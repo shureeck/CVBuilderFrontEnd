@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import CVsList from './components/cvs-list/CVsList'
+import CV from './components/cv/CV'
+import { Routes, Route } from 'react-router-dom';
+import CVForm from './components/cv-form/CVForm';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="header"><h1>GLANCE</h1></div>
+      <div className="body">
+        <Routes>
+          <Route path="/" element={<CVsList />} />
+          <Route path="/cv" element={<CV />} />
+          <Route path="/new" element={<CVForm />} />
+        </Routes>
+      </div>
+      <div className="footer">Developed by GLANCE.CORP in 2023</div>
     </div>
   );
 }

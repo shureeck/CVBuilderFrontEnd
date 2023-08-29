@@ -1,0 +1,35 @@
+.steps-progerss{
+    width: 960px;
+    height: 60px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 25px;
+	box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+    border: solid 1px rgba(90, 116, 148, 0.4);
+}
+.step{
+    display: table-cell;
+    height: 60px;
+    width: 120px;
+    word-break: keep-all;
+    vertical-align:middle;
+    margin: auto;
+    color: #1a3b5d;
+    font-size: 18px;
+}
+.step p{
+    margin: 0px;
+}
+
+.first{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.last{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.done{
+    background-color: rgba(90, 116, 148, 0.3);
+}

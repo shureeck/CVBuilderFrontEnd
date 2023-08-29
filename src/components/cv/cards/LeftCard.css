@@ -1,0 +1,16 @@
+.left-card {
+    background: #003D73;
+    width: 295px;
+    margin: 0;
+    float: left;
+    color: #FFFFFF;
+    text-align: left;
+    padding:5px 27.5px 5px 27.5px;
+	word-wrap:break-word;
+}
+
+.left-card h3{
+background: #00315C;
+margin:5px -27.5px;
+padding-left:27.5px;
+}

@@ -1,0 +1,28 @@
+.input-contact{
+    margin-top: 15px;
+}
+.input-contact__title {
+    display: inline-block;
+    width: 20%;
+    margin-right: 5px;
+}
+
+.input-contact__value {
+    display: inline-block;
+    width: 68%;
+    margin-right: 5px;
+}
+
+.input-contact__button {
+    display: inline-block;
+    vertical-align: middle;
+    height: 53px;
+    width: 50px;
+    color: #cb0b0b;
+    font-size: 46px;
+    margin: 0px;
+    margin-bottom: 5px;
+
+}
+
+

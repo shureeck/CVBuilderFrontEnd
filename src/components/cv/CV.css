@@ -1,0 +1,17 @@
+.cv {
+    display: flex;
+    align-items: stretch;
+    background: #FAFAFA;
+    height: 100%;
+    width: 1135px;
+    border: solid 1px black;
+    margin: auto;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 24px;
+    padding-top: 20px;
+	padding-bottom: 20px;
+}

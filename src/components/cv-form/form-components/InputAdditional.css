@@ -1,0 +1,9 @@
+.input-additional{
+    border-bottom: 1px solid #CCCCCC;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.input-additional button{
+    margin-bottom: 20px;
+    width: 250px;
+}

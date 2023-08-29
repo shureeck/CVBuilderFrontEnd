@@ -1,0 +1,29 @@
+.table-row{
+    display: table;
+    width: 100%;
+    font-size: 20px;
+}
+.table-row__header{
+    font-weight: bold;
+    background-color: #CCE5FF;
+}
+.table-row__dark-bg{
+    background-color: #FAFAFA;
+}
+.table-row:hover:not(.table-row__header){
+    background-color: #F0F0F0;
+    font-size: 25px;
+    cursor: pointer;
+}
+.table-cell{
+    display: table-cell;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.table_cell__1{
+    width: 30px;
+}
+.table_cell__2{
+    width: 300px;
+}

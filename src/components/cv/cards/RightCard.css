@@ -1,0 +1,14 @@
+.right-card{
+    display: inline-block;
+    width: 785px;
+    margin:0;
+    background: #ffffff;
+    padding: 20px;
+    word-break:keep-all;
+    text-align: justify;
+}
+.right-card  h3{
+    color: #003D73;
+	border-top: 3px solid #D5D6D6;
+	border-bottom: 3px solid #D5D6D6;
+}

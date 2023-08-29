@@ -1,0 +1,19 @@
+.input-skill{
+    margin-top: 15px;
+}
+.input-skill__input {
+    display: inline-block;
+    width: 90%;
+    margin-right: 5px;
+}
+
+.input-skill__button {
+    display: inline-block;
+    vertical-align: middle;
+    height: 53px;
+    width: 50px;
+    color: #cb0b0b;
+    font-size: 46px;
+    margin: 0px;
+    margin-bottom: 5px;
+}
