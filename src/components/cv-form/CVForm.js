@@ -40,7 +40,7 @@ const CVForm = () => {
 
     }
 
-    const submitClickHandler = () => {
+    const previewClickHandler = () => {
         console.log("Submit button clicked");
         console.log(CVObject);
         setPreview(true);
@@ -102,22 +102,20 @@ const CVForm = () => {
     <EducationForm onDataChange={educationChangeHandler} value={education} />,
     <AdditionalInformationForm onDataChange={additionalInfChangeHandler} value={additional} />]
 
-    const nextButton = <button type="button" onClick={nextClickHandler}>Next</button>;
-    const submitButton = <button type="button" onClick={submitClickHandler}>Submit</button>;
     const form = <form className="cv-form__form">
         {forms[count]}
         <div className='buttons'>
             <button type="button" disabled={count === 0} onClick={previousClickHandler}>Previous</button>
-            {count < (forms.length - 1) ? nextButton : submitButton}
+            <button type="button" disabled={count === forms.length - 1} onClick={nextClickHandler}>Next</button>;
+            <button type="button" disabled={count < forms.length - 1} onClick={previewClickHandler}>Preview</button>;
         </div>
     </form>;
 
-const cvPreview = <CVPreView value={CVObject} onBackClick={setPreview} />;
- 
+    const cvPreview = <CVPreView value={CVObject} onBackClick={setPreview} />;
+
     return (<div className="cv-form">
         <StepsProgress className='steps-progress' steps={steps} page={count} />
         {preview ? cvPreview : form}
-
     </div>);
 }
 export default CVForm;
