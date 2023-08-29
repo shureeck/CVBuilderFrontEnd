@@ -49,13 +49,22 @@ const CV = (props) => {
   const skills = obj.skills;
   const contacts = obj.contactsList;
   const summary = obj.description;
-  const experience = obj.workExperience;
+  let experience = obj.workExperience;
   let education = obj.education;
+
+  if (typeof experience !== 'undefined' && experience.length > 0) {
+    experience = obj.workExperience.map((item) => {
+      return {
+        ...item,
+        period: (typeof item.period !== 'undefined' ? item.period : (`${item.startDate} -  ${item.endDate}`))
+      }
+    });
+  }
 
   if (typeof education !== 'undefined' && education.length > 0) {
     education = obj.education.map((item) => {
       return {
-        period: item.period,
+        period: (typeof item.period !== 'undefined' ? item.period : (`${item.startDate} -  ${item.endDate}`)),
         organization: item.university,
         position: item.degree
       };

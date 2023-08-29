@@ -18,7 +18,8 @@ const EducationForm = (props) => {
         const array = [...education];
         array.push({
             startDate: '', endDate: '',
-            degree: '', organization: ''
+            degree: '', organization: '',
+            period: () => { return `${this.startDate} - ${this.endDate}` }
         });
         props.onDataChange(array);
     }

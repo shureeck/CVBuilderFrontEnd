@@ -19,18 +19,18 @@ const InputEducation = (props) => {
     }
     const organizationChangeHandler = (value) => {
         const obj = { ...education };
-        obj.organization = value;
+        obj.university = value;
         props.onChange(props.id, obj);
     }
 
     const removeClickHandler = () => { props.onRemove(props.id); }
 
     return <div className="input-expirience">
-        <Input className='input-expirience__date' onChange={startDateChangeHandler} label="Start date" type="date" value={education.startDate} />
+        <Input className='input-expirience__date' onChange={startDateChangeHandler} label="Start date" type="month" value={education.startDate} />
         <div className="decorate" />
-        <Input className='input-expirience__date' onChange={endDateChangeHandler} label="End date" type="date" value={education.endDate} />
+        <Input className='input-expirience__date' onChange={endDateChangeHandler} label="End date" type="month" value={education.endDate} />
         <Input label="Degree" onChange={degreeChangeHandler} value={education.degree} />
-        <Input label="Organization" onChange={organizationChangeHandler} value={education.organization} />
+        <Input label="Organization" onChange={organizationChangeHandler} value={education.university} />
         <button type="button" onClick={removeClickHandler} className="input-expirience__remove-button" >Remove education</button>
     </div>
 }

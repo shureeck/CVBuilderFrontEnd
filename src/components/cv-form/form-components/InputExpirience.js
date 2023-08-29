@@ -33,9 +33,9 @@ const InputExpirience = (props) => {
     const removeClickHandler = () => { props.onRemove(props.id); }
 
     return <div id={props.id} className="input-expirience">
-        <Input className='input-expirience__date' onChange={startDateChangeHandler} label="Start date" type="date" value={work.startDate} />
+        <Input className='input-expirience__date' onChange={startDateChangeHandler} label="Start date" type="month" value={work.startDate} />
         <div className="decorate" />
-        <Input className='input-expirience__date' onChange={endDateChangeHandler} label="End date" type="date" value={work.endDate} />
+        <Input className='input-expirience__date' onChange={endDateChangeHandler} label="End date" type="month" value={work.endDate} />
         <Input label="Position" onChange={positionChangeHandler} value={work.position} />
         <Input label="Company" onChange={companyChangeHandler} value={work.organization} />
         <TextArea label="Responsibility" onChange={responsibilityChangeHandler} value={work.responsibilityList} />

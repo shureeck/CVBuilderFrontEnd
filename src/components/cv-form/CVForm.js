@@ -29,7 +29,7 @@ const CVForm = () => {
     }]);
     const [education, setEducation] = useState([{
         startDate: '', endDate: '',
-        degree: '', organization: ''
+        degree: '', university: ''
     }]);
     const [additional, setAdditional] = useState([{ tittle: 'Additional information', value: '' }]);
 
